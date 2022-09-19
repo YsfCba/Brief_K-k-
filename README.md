@@ -110,7 +110,7 @@ Le MLD est <span class="colour" style="color:rgb(36, 41, 47)">la transformation
 
 ## Script SQL
 
-```
+```sql
 CREATE TABLE company(
    Id_company COUNTER,
    company_name VARCHAR(50),
