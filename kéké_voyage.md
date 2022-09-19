@@ -97,13 +97,13 @@ VILLE
 
 Le MCD a pour but de décrire de manière<span class="colour" style="color:rgb(36, 41, 47)"> formelle les données d'un système d'information (SI). Le MCD décrit la sémantique, c’est-à-dire le sens, attachée à ces données et à leurs rapports, et non l’utilisation qui en est faite.</span>
 
-Afficher le MCD
+[Afficher le MCD](DataBase/MCD.PNG)
 
 # MLD - Modèle Logique de Données
 
 Le MLD est <span class="colour" style="color:rgb(36, 41, 47)">la transformation du MCD en un ensemble de tables. Il est la représentation des données d'un système d'information et est généré à partir du MCD.</span>
 
-Afficher le MCD
+[Afficher le MLD](DataBase/MLD.PNG)
 
 # MPD - Modèle Physique de Données
 
