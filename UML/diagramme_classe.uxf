@@ -1,0 +1,127 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>8</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>304</x><y>128</y><w>168</w><h>264</h></coordinates><panel_attributes>Booking
+--
+- id_booking
+- reservation_number
+- status
+- email
+- last_name
+- first_name
+- date_off_birth
+- passport_number
+- price
+- phone_number
+- booking_date
+
+--
+/+AddBooking()/
+/+DeleteBooking()/
+/+UpdateNooking()/
+/+ValidateBooking()/
+/+Verifcation(last_name, first_name, date_off_birth, passport_number) /
+/+VerifStatus()/
+/+RigesterBookingDBB()/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>544</x><y>40</y><w>168</w><h>160</h></coordinates><panel_attributes>Flight
+--
+- id_flight
+- flight_number
+- starting_date
+- arriving_date
+- status
+--
+/+AddFlight()/
+/+CancelFlight()/
+/+UpdateFlight()/
+/+OpenBooking()/
+/+CancelBooking()/
+/+getFlight(destination, date)/
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>544</x><y>336</y><w>168</w><h>96</h></coordinates><panel_attributes>Aeroport
+--
+- id_aeroport
+- airport_name
+--
+/+AddAirport()/
+/+DeleteAirport()/
+/+UpdateAirport()/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>856</x><y>40</y><w>168</w><h>112</h></coordinates><panel_attributes>Compagnie
+--
+- id_compagnie
+- code_IATA
+- nom_compagnie
+--
+/+Add()/
+/+Delete()/
+/+Update()/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>544</x><y>544</y><w>168</w><h>96</h></coordinates><panel_attributes>City
+--
+- id_city
+- city_name
+--
+/+AddCity()/
+/+DeleteCity()/
+/+UpdateCity()/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>840</x><y>544</y><w>168</w><h>96</h></coordinates><panel_attributes>Country
+--
+- id_country
+- country_name
+--
+/+Add()/
+/+Delete()/
+/+Update()/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>464</x><y>128</y><w>96</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+associate</panel_attributes><additional_attributes>10;20;100;20</additional_attributes></element><element><id>Relation</id><coordinates><x>704</x><y>120</y><w>168</w><h>48</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+correspond</panel_attributes><additional_attributes>10;30;190;20</additional_attributes></element><element><id>Relation</id><coordinates><x>552</x><y>192</y><w>48</w><h>160</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+fly off</panel_attributes><additional_attributes>10;10;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>624</x><y>424</y><w>40</w><h>136</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+own</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>704</x><y>600</y><w>152</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+have</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>856</x><y>216</y><w>168</w><h>96</h></coordinates><panel_attributes>Stopover
+--
+- starting_date
+- arriving_date
+--
+/+AddAirport()/
+/+DeleteAirport()/
+/+UpdateAirport()/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>704</x><y>192</y><w>168</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=*
+
+</panel_attributes><additional_attributes>10;10;190;30</additional_attributes></element><element><id>Relation</id><coordinates><x>704</x><y>304</y><w>168</w><h>56</h></coordinates><panel_attributes>lt=-
+m1=*
+
+</panel_attributes><additional_attributes>10;40;190;10</additional_attributes></element><element><id>Relation</id><coordinates><x>672</x><y>192</y><w>72</w><h>160</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+touch down</panel_attributes><additional_attributes>10;10;10;180</additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>488</y><w>168</w><h>104</h></coordinates><panel_attributes>Client
+--
+- email
+- number
+--
++ searchFlight()
++ selectFlight()
++ bookFlight()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>24</y><w>168</w><h>80</h></coordinates><panel_attributes>Payement
+--
+
+--
++ PayMoney()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>224</y><w>168</w><h>136</h></coordinates><panel_attributes>BookingSystem
+--
+
+
+--
+/+ AddBooking()/
+/+ DeleteBooking()/
+/+ UpdateNooking()/
+/+ ValidateBooking()/
+/+ pay()/
+/+ getdetailFlight/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>112</x><y>352</y><w>24</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>112</x><y>96</y><w>24</w><h>136</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>112</x><y>96</y><w>24</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;160;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>272</y><w>112</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;120;10</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>272</y><w>120</w><h>24</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>130;10;10;10</additional_attributes></element></diagram>
